@@ -1,0 +1,459 @@
+/**
+ * Owl Carousel v2.2.0
+ * Copyright 2013-2016 David Deutsch
+ * Licensed under MIT (https://github.com/OwlCarousel2/OwlCarousel2/blob/master/LICENSE)
+ */
+/*
+ *  Owl Carousel - Core
+ */
+.owl-carousel {
+  display: none;
+  width: 100%;
+  -webkit-tap-highlight-color: transparent;
+  /* position relative and z-index fix webkit rendering fonts issue */
+  position: relative;
+  z-index: 1; }
+
+.owl-carousel .owl-stage {
+  position: relative;
+  -ms-touch-action: pan-Y; }
+
+.owl-carousel .owl-stage:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0; }
+
+.owl-carousel .owl-stage-outer {
+  position: relative;
+  overflow: hidden;
+  /* fix for flashing background */
+  -webkit-transform: translate3d(0px, 0px, 0px); }
+
+.owl-carousel .owl-item {
+  position: relative;
+  min-height: 1px;
+  float: left;
+  -webkit-backface-visibility: hidden;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none; }
+
+.owl-carousel .owl-item img {
+  display: block;
+  width: 100%;
+  -webkit-transform-style: preserve-3d; }
+
+.owl-carousel .owl-nav.disabled,
+.owl-carousel .owl-dots.disabled {
+  display: none; }
+
+.owl-carousel .owl-nav .owl-prev,
+.owl-carousel .owl-nav .owl-next,
+.owl-carousel .owl-dot {
+  cursor: pointer;
+  cursor: hand;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+.owl-carousel.owl-loaded {
+  display: block; }
+
+.owl-carousel.owl-loading {
+  opacity: 0;
+  display: block; }
+
+.owl-carousel.owl-hidden {
+  opacity: 0; }
+
+.owl-carousel.owl-refresh .owl-item {
+  visibility: hidden; }
+
+.owl-carousel.owl-drag .owl-item {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+.owl-carousel.owl-grab {
+  cursor: move;
+  cursor: grab; }
+
+.owl-carousel.owl-rtl {
+  direction: rtl; }
+
+.owl-carousel.owl-rtl .owl-item {
+  float: right; }
+
+/* No Js */
+.no-js .owl-carousel {
+  display: block; }
+
+/*
+ *  Owl Carousel - Animate Plugin
+ */
+.owl-carousel .animated {
+  -webkit-animation-duration: 1000ms;
+  animation-duration: 1000ms;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both; }
+
+.owl-carousel .owl-animated-in {
+  z-index: 0; }
+
+.owl-carousel .owl-animated-out {
+  z-index: 1; }
+
+.owl-carousel .fadeOut {
+  -webkit-animation-name: fadeOut;
+  animation-name: fadeOut; }
+
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+/*
+ * 	Owl Carousel - Auto Height Plugin
+ */
+.owl-height {
+  transition: height 500ms ease-in-out; }
+
+/*
+ * 	Owl Carousel - Lazy Load Plugin
+ */
+.owl-carousel .owl-item .owl-lazy {
+  opacity: 0;
+  transition: opacity 400ms ease; }
+
+.owl-carousel .owl-item img.owl-lazy {
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d; }
+
+/*
+ * 	Owl Carousel - Video Plugin
+ */
+.owl-carousel .owl-video-wrapper {
+  position: relative;
+  height: 100%;
+  background: #000; }
+
+.owl-carousel .owl-video-play-icon {
+  position: absolute;
+  height: 80px;
+  width: 80px;
+  left: 50%;
+  top: 50%;
+  margin-left: -40px;
+  margin-top: -40px;
+  background: url("owl.video.play.png") no-repeat;
+  cursor: pointer;
+  z-index: 1;
+  -webkit-backface-visibility: hidden;
+  transition: -webkit-transform 100ms ease;
+  transition: transform 100ms ease; }
+
+.owl-carousel .owl-video-play-icon:hover {
+  -webkit-transform: scale(1.3, 1.3);
+  -ms-transform: scale(1.3, 1.3);
+  transform: scale(1.3, 1.3); }
+
+.owl-carousel .owl-video-playing .owl-video-tn,
+.owl-carousel .owl-video-playing .owl-video-play-icon {
+  display: none; }
+
+.owl-carousel .owl-video-tn {
+  opacity: 0;
+  height: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  transition: opacity 400ms ease; }
+
+.owl-carousel .owl-video-frame {
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  width: 100%; }
+
+/**
+ * Owl Carousel v2.2.0
+ * Copyright 2013-2016 David Deutsch
+ * Licensed under MIT (https://github.com/OwlCarousel2/OwlCarousel2/blob/master/LICENSE)
+ */
+/*
+ * 	Default theme - Owl Carousel CSS File
+ */
+.owl-theme .owl-nav {
+  margin-top: 10px;
+  text-align: center;
+  -webkit-tap-highlight-color: transparent; }
+
+.owl-theme .owl-nav [class*='owl-'] {
+  color: #FFF;
+  font-size: 14px;
+  margin: 5px;
+  padding: 4px 7px;
+  background: #D6D6D6;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 3px; }
+
+.owl-theme .owl-nav [class*='owl-']:hover {
+  background: #869791;
+  color: #FFF;
+  text-decoration: none; }
+
+.owl-theme .owl-nav .disabled {
+  opacity: 0.5;
+  cursor: default; }
+
+.owl-theme .owl-nav.disabled + .owl-dots {
+  margin-top: 10px; }
+
+.owl-theme .owl-dots {
+  text-align: center;
+  -webkit-tap-highlight-color: transparent; }
+
+.owl-theme .owl-dots .owl-dot {
+  display: inline-block;
+  zoom: 1;
+  *display: inline; }
+
+.owl-theme .owl-dots .owl-dot span {
+  width: 10px;
+  height: 10px;
+  margin: 5px 7px;
+  background: #D6D6D6;
+  display: block;
+  -webkit-backface-visibility: visible;
+  transition: opacity 200ms ease;
+  border-radius: 30px; }
+
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+  background: #869791; }
+
+body {
+  margin: 0;
+  font-family: OpenSans, Arial; }
+
+ul {
+  list-style: none;
+  padding: 0; }
+
+header .extra {
+  background-color: #131212;
+  color: #fff;
+  font-size: 12px; }
+  header .extra span {
+    padding: 10px; }
+    header .extra span a {
+      color: #fff;
+      text-decoration: underline; }
+
+header .top {
+  padding: 20px 0px 10px; }
+  header .top .header-logo {
+    float: left; }
+    header .top .header-logo h1 {
+      margin: 0px 60px 0px 0px; }
+      header .top .header-logo h1 img {
+        width: 272px;
+        height: 64px; }
+  header .top .header-search {
+    float: left;
+    max-width: 600px;
+    margin-top: 5px; }
+    header .top .header-search .input-group input {
+      width: 500px;
+      height: 40px;
+      border: 1px solid #cbc8c8;
+      border-radius: 0; }
+    header .top .header-search .input-group .input-group-btn {
+      float: left; }
+      header .top .header-search .input-group .input-group-btn button {
+        background-color: #6a0016;
+        border: none;
+        height: 40px; }
+  header .top .header-myordered {
+    float: left;
+    margin-top: 10px;
+    margin-left: 20px; }
+    header .top .header-myordered a {
+      padding: 10px;
+      color: #6a0016;
+      text-decoration: underline; }
+
+header nav {
+  background-color: #6a0016;
+  height: 50px; }
+  header nav li {
+    display: inline-block; }
+    header nav li a {
+      padding: 14px 20px;
+      display: block;
+      color: #fff;
+      text-transform: uppercase; }
+      header nav li a:hover {
+        color: #dfa337; }
+
+main.home .ruler ul {
+  border: 1px solid #cbc8c8;
+  padding: 20px; }
+  main.home .ruler ul li {
+    display: inline-block;
+    width: 25%;
+    font-size: 0.8em; }
+    main.home .ruler ul li strong {
+      display: block;
+      color: #6a0016; }
+    main.home .ruler ul li span {
+      color: #9d9d9d; }
+
+main.home .banner-down a img {
+  max-width: 100%; }
+
+footer .footer-newsletter {
+  margin: 0px;
+  border-top: 1px solid #CCC;
+  border-bottom: 1px solid #CCC; }
+  footer .footer-newsletter .col-md-12 {
+    margin: 20px 0px;
+    background-color: #6a0016; }
+  footer .footer-newsletter span {
+    float: left;
+    padding: 24px;
+    color: #fff;
+    font-weight: bold; }
+    footer .footer-newsletter span strong {
+      color: #c98d30; }
+  footer .footer-newsletter input {
+    margin: 15px 5px;
+    padding: 10px;
+    font-size: 12px;
+    width: 460px; }
+  footer .footer-newsletter button {
+    padding: 12px;
+    font-size: 12px;
+    background-color: #c98d30;
+    color: #fff;
+    border: none; }
+
+footer .footer-about {
+  border: 2px solid #ccc;
+  margin: 20px 0px; }
+  footer .footer-about h2 {
+    color: #5f0018;
+    font-size: 22px; }
+  footer .footer-about p {
+    color: #333333;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: justify; }
+
+footer .footer-info {
+  background-color: #f1f1f1;
+  padding: 20px 10px;
+  margin: 0px; }
+  footer .footer-info .map-title {
+    color: #544e4d;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px; }
+  footer .footer-info .footer-logo {
+    float: left;
+    display: block;
+    height: 20px; }
+  footer .footer-info .footer-site-map {
+    float: left; }
+    footer .footer-info .footer-site-map h3 {
+      margin: 0px;
+      font-size: 12px;
+      line-height: 18px; }
+      footer .footer-info .footer-site-map h3 a {
+        color: #544e4d;
+        cursor: pointer; }
+  footer .footer-info .footer-seal {
+    float: left;
+    display: inline-block; }
+
+footer .footer-payments span {
+  color: #b0afae;
+  font-size: 12px;
+  font-weight: 400; }
+
+footer .footer-ruler {
+  background-color: #f1f1f1;
+  padding-top: 20px;
+  margin: 0px; }
+  footer .footer-ruler .social {
+    color: #fff;
+    background-color: #6a0016;
+    margin: 0px;
+    padding: 20px 0px 40px; }
+    footer .footer-ruler .social span {
+      float: left; }
+    footer .footer-ruler .social .list-inline {
+      float: left; }
+  footer .footer-ruler .footer-copy {
+    padding: 10px;
+    color: #8c8a89;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    text-align: center; }
+    footer .footer-ruler .footer-copy span {
+      display: block; }
+
+.vitrine {
+  padding: 20px 0px; }
+  .vitrine .product {
+    border: 1px solid transparent;
+    text-align: center;
+    margin-bottom: 60px; }
+    .vitrine .product:hover {
+      border-color: #c1c1c3;
+      margin-bottom: 0px; }
+      .vitrine .product:hover .btn-buy {
+        display: block; }
+    .vitrine .product h2 {
+      margin: 0px; }
+      .vitrine .product h2 a {
+        color: #7e7f84;
+        font-size: 14px;
+        font-weight: 700; }
+    .vitrine .product a .price, .vitrine .product a .installments {
+      display: block; }
+    .vitrine .product a .price {
+      color: #5f0018;
+      font-size: 14px;
+      font-weight: 700; }
+    .vitrine .product a .installments {
+      color: #7e7f84;
+      font-size: 12px;
+      width: 60%;
+      margin: 0px auto; }
+      .vitrine .product a .installments strong {
+        color: #7e7f84; }
+    .vitrine .product a:hover {
+      text-decoration: none; }
+    .vitrine .product .btn-buy {
+      display: none;
+      background-color: #6a0016;
+      width: 179px;
+      height: 45px;
+      margin: 10px auto -20px;
+      color: #fff;
+      padding: 10px; }

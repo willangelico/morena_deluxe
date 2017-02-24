@@ -1,0 +1,55 @@
+header .extra {
+  background-color: #131212;
+  color: #fff;
+  font-size: 12px; }
+  header .extra span {
+    padding: 10px; }
+    header .extra span a {
+      color: #fff;
+      text-decoration: underline; }
+
+header .top {
+  padding: 20px 0px 10px; }
+  header .top .header-logo {
+    float: left; }
+    header .top .header-logo h1 {
+      margin: 0px 60px 0px 0px; }
+      header .top .header-logo h1 img {
+        width: 272px;
+        height: 64px; }
+  header .top .header-search {
+    float: left;
+    max-width: 600px;
+    margin-top: 5px; }
+    header .top .header-search .input-group input {
+      width: 500px;
+      height: 40px;
+      border: 1px solid #cbc8c8;
+      border-radius: 0; }
+    header .top .header-search .input-group .input-group-btn {
+      float: left; }
+      header .top .header-search .input-group .input-group-btn button {
+        background-color: #6a0016;
+        border: none;
+        height: 40px; }
+  header .top .header-myordered {
+    float: left;
+    margin-top: 10px;
+    margin-left: 20px; }
+    header .top .header-myordered a {
+      padding: 10px;
+      color: #6a0016;
+      text-decoration: underline; }
+
+header nav {
+  background-color: #6a0016;
+  height: 50px; }
+  header nav li {
+    display: inline-block; }
+    header nav li a {
+      padding: 14px 20px;
+      display: block;
+      color: #fff;
+      text-transform: uppercase; }
+      header nav li a:hover {
+        color: #dfa337; }

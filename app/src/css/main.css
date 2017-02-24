@@ -1,0 +1,15 @@
+main.home .ruler ul {
+  border: 1px solid #cbc8c8;
+  padding: 20px; }
+  main.home .ruler ul li {
+    display: inline-block;
+    width: 25%;
+    font-size: 0.8em; }
+    main.home .ruler ul li strong {
+      display: block;
+      color: #6a0016; }
+    main.home .ruler ul li span {
+      color: #9d9d9d; }
+
+main.home .banner-down a img {
+  max-width: 100%; }

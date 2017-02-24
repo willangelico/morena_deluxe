@@ -1,0 +1,30 @@
+main.home{
+	.banner{
+
+	}
+	.ruler{
+		ul{
+			border: 1px solid #cbc8c8;
+			padding: 20px;
+			li{ 
+				display: inline-block;
+				width: 25%;
+				font-size: 0.8em;
+				strong{
+					display: block;
+					color: #6a0016;
+				}
+				span{
+					color:  #9d9d9d;
+				}
+			}
+		}
+	}
+	.banner-down{
+		a{
+			img{
+				max-width: 100%;
+			}
+		}
+	}
+}

@@ -1,0 +1,23 @@
+{
+  "name": "morenadeluxe",
+  "version": "1.0.0",
+  "description": "E-commerce vestuário feminino",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ecommerce"
+  ],
+  "author": "Will Angélico",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-live-server": "0.0.30",
+    "gulp-order": "^1.1.1",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^2.0.1"
+  }
+}

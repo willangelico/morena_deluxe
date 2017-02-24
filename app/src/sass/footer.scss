@@ -1,0 +1,122 @@
+footer{
+	.footer-newsletter{
+		margin: 0px;		
+		border-top: 1px solid #CCC;
+		border-bottom: 1px solid #CCC;
+		.col-md-12{
+			margin: 20px 0px;
+			background-color: #6a0016;
+		}
+		span{
+			float: left;
+			padding: 24px;
+			color: #fff;
+			font-weight: bold;
+			strong{
+				color: #c98d30;
+
+			}
+		}
+		input{
+			margin: 15px 5px;			
+			padding: 10px;
+			font-size: 12px;
+			width: 460px;
+		}
+		button{
+			padding: 12px;
+			font-size: 12px;
+			background-color: #c98d30;
+			color: #fff;
+			border: none;
+		}
+	}
+	.footer-about{
+		border: 2px solid #ccc;
+		margin: 20px 0px;
+		h2{
+			color:  #5f0018;
+			font-size: 22px;
+		}
+		p{
+			color:  #333333;
+			font-size: 16px;
+			font-weight: 400;
+			line-height: 22px;
+			text-align: justify;
+		}
+	}
+	
+	.footer-info{
+		background-color: #f1f1f1;
+		padding: 20px 10px;
+		margin: 0px;
+		.map-title{
+			color:  #544e4d;
+			font-size: 16px;
+			font-weight: 700;
+			line-height: 20px;
+		}
+		.footer-logo{
+			
+			float: left;
+			display: block;
+			height: 20px;
+			
+		}
+		.footer-site-map{
+			float: left;
+
+			h3{
+				margin:0px;
+				font-size: 12px;
+				line-height: 18px;
+				a{
+					color:  #544e4d;
+					cursor: pointer;
+				}
+			}
+		}
+		
+		.footer-seal{
+			float: left;
+			display: inline-block;
+
+		}	
+	}
+	.footer-payments{
+		span{
+			color:  #b0afae;
+			font-size: 12px;
+			font-weight: 400;
+		}
+	}
+	.footer-ruler{
+		background-color: #f1f1f1;
+		padding-top: 20px;
+		margin: 0px;
+		.social{
+			color: #fff;
+			background-color:  #6a0016;
+			margin: 0px;
+			padding: 20px 0px 40px;
+			span{ 
+				float: left;
+
+			}
+			.list-inline{ 
+				float: left;
+			}
+		}
+		.footer-copy{
+			padding: 10px;
+			color:  #8c8a89;
+			font-size: 14px;
+			font-weight: 400;
+			line-height: 17px;
+			text-align: center;
+			span{ display: block;}
+		}
+	}
+	
+}

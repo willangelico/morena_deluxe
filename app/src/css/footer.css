@@ -1,0 +1,92 @@
+footer .footer-newsletter {
+  margin: 0px;
+  border-top: 1px solid #CCC;
+  border-bottom: 1px solid #CCC; }
+  footer .footer-newsletter .col-md-12 {
+    margin: 20px 0px;
+    background-color: #6a0016; }
+  footer .footer-newsletter span {
+    float: left;
+    padding: 24px;
+    color: #fff;
+    font-weight: bold; }
+    footer .footer-newsletter span strong {
+      color: #c98d30; }
+  footer .footer-newsletter input {
+    margin: 15px 5px;
+    padding: 10px;
+    font-size: 12px;
+    width: 460px; }
+  footer .footer-newsletter button {
+    padding: 12px;
+    font-size: 12px;
+    background-color: #c98d30;
+    color: #fff;
+    border: none; }
+
+footer .footer-about {
+  border: 2px solid #ccc;
+  margin: 20px 0px; }
+  footer .footer-about h2 {
+    color: #5f0018;
+    font-size: 22px; }
+  footer .footer-about p {
+    color: #333333;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: justify; }
+
+footer .footer-info {
+  background-color: #f1f1f1;
+  padding: 20px 10px;
+  margin: 0px; }
+  footer .footer-info .map-title {
+    color: #544e4d;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px; }
+  footer .footer-info .footer-logo {
+    float: left;
+    display: block;
+    height: 20px; }
+  footer .footer-info .footer-site-map {
+    float: left; }
+    footer .footer-info .footer-site-map h3 {
+      margin: 0px;
+      font-size: 12px;
+      line-height: 18px; }
+      footer .footer-info .footer-site-map h3 a {
+        color: #544e4d;
+        cursor: pointer; }
+  footer .footer-info .footer-seal {
+    float: left;
+    display: inline-block; }
+
+footer .footer-payments span {
+  color: #b0afae;
+  font-size: 12px;
+  font-weight: 400; }
+
+footer .footer-ruler {
+  background-color: #f1f1f1;
+  padding-top: 20px;
+  margin: 0px; }
+  footer .footer-ruler .social {
+    color: #fff;
+    background-color: #6a0016;
+    margin: 0px;
+    padding: 20px 0px 40px; }
+    footer .footer-ruler .social span {
+      float: left; }
+    footer .footer-ruler .social .list-inline {
+      float: left; }
+  footer .footer-ruler .footer-copy {
+    padding: 10px;
+    color: #8c8a89;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    text-align: center; }
+    footer .footer-ruler .footer-copy span {
+      display: block; }

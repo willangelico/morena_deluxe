@@ -1,0 +1,40 @@
+.vitrine {
+  padding: 20px 0px; }
+  .vitrine .product {
+    border: 1px solid transparent;
+    text-align: center;
+    margin-bottom: 60px; }
+    .vitrine .product:hover {
+      border-color: #c1c1c3;
+      margin-bottom: 0px; }
+      .vitrine .product:hover .btn-buy {
+        display: block; }
+    .vitrine .product h2 {
+      margin: 0px; }
+      .vitrine .product h2 a {
+        color: #7e7f84;
+        font-size: 14px;
+        font-weight: 700; }
+    .vitrine .product a .price, .vitrine .product a .installments {
+      display: block; }
+    .vitrine .product a .price {
+      color: #5f0018;
+      font-size: 14px;
+      font-weight: 700; }
+    .vitrine .product a .installments {
+      color: #7e7f84;
+      font-size: 12px;
+      width: 60%;
+      margin: 0px auto; }
+      .vitrine .product a .installments strong {
+        color: #7e7f84; }
+    .vitrine .product a:hover {
+      text-decoration: none; }
+    .vitrine .product .btn-buy {
+      display: none;
+      background-color: #6a0016;
+      width: 179px;
+      height: 45px;
+      margin: 10px auto -20px;
+      color: #fff;
+      padding: 10px; }

@@ -1,0 +1,54 @@
+.vitrine{
+	padding: 20px 0px;
+	.product{
+		border: 1px solid transparent;
+		text-align: center;
+		margin-bottom: 60px;
+		&:hover{
+			border-color: #c1c1c3;
+			margin-bottom: 0px;
+			.btn-buy{
+				display: block;
+			}
+		}
+		h2{
+			margin: 0px;
+			a{ 
+				color:  #7e7f84;
+				font-size: 14px;
+				font-weight: 700;
+			}
+		}
+		a{
+			.price, .installments{
+				display: block;
+			}
+			.price{
+				color:  #5f0018;
+				font-size: 14px;
+				font-weight: 700;
+			}
+			.installments{
+				color:  #7e7f84;
+				font-size: 12px;
+				width: 60%;
+				margin: 0px auto;
+				strong{
+					color:  #7e7f84;
+				}
+			}
+			&:hover{
+				text-decoration: none;
+			}
+		}
+		.btn-buy{	
+			display: none;		
+			background-color:  #6a0016;
+			width: 179px;
+			height: 45px;			
+			margin: 10px auto -20px;
+			color: #fff;
+			padding: 10px;
+		}
+	}
+}
